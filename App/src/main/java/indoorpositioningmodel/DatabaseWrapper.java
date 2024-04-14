@@ -4,13 +4,10 @@ import android.app.Activity;
 import android.net.wifi.ScanResult;
 import android.util.Log;
 
-import androidx.annotation.NonNull;
-
 import com.google.firebase.FirebaseApp;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
-import com.google.firebase.firestore.WriteBatch;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -52,45 +49,6 @@ public class DatabaseWrapper {
         loadLocalRecords();
     }
 
-    /*
-    {
-        reference_x : 0.25,
-        reference_y : 0.25,
-        angle : 170,
-        rssi_observations: [
-            {
-                SSID: "SCSLAB_AP_1_2GHZ",
-                RSSI : -50,
-                frequency: 2180
-            },
-            {
-                SSID: "SCSLAB_AP_2_2GHZ",
-                RSSI : -50,
-                frequency: 2190
-            },
-            {
-                SSID: "SCSLAB_AP_3_2GHZ",
-                RSSI : -50,
-                frequency: 2200
-            },
-            {
-                SSID: "SCSLAB_AP_1_5GHZ",
-                RSSI : -50,
-                frequency: 5780
-            },
-            {
-                SSID: "SCSLAB_AP_2_5GHZ",
-                RSSI : -50,
-                frequency: 5790
-            },
-            {
-                SSID: "SCSLAB_AP_3_5GHZ",
-                RSSI : -50,
-                frequency: 5800
-            }
-        ]
-    }
-     */
     private void loadLocalRecords() {
         Activity activity = activityWeakReference.get();
         if (activity == null || activity.isFinishing()) {

@@ -77,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
         indoorLocalisationButton.setOnClickListener(v -> {
             if (!requestPermissions()) return;
 
-            Intent myIntent = new Intent(getApplicationContext(), IndoorLocalisationActivity.class);
+            Intent myIntent = new Intent(getApplicationContext(), IndoorPositioningActivity.class);
             startActivity(myIntent);
         });
     }

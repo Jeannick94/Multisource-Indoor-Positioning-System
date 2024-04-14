@@ -9,7 +9,7 @@ import indoorpositioningmodel.IndoorPositioningModel;
 import indoorpositioningmodel.IndoorPositioningVisualiser;
 import indoorpositioningmodel.Position;
 
-public class IndoorLocalisationActivity extends AppCompatActivity implements IndoorPositioningModel.UpdatePositionCallback, DirectionManager.OnDirectionChangedCallback {
+public class IndoorPositioningActivity extends AppCompatActivity implements IndoorPositioningModel.UpdatePositionCallback, DirectionManager.OnDirectionChangedCallback {
 
     private IndoorPositioningModel indoorPositioningModel;
     private IndoorPositioningVisualiser indoorVisualiser;

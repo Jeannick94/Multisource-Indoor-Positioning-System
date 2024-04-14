@@ -41,7 +41,7 @@
         </activity>
 
         <activity
-            android:name="com.smartLab.mips.IndoorLocalisationActivity"
+            android:name="com.smartLab.mips.IndoorPositioningActivity"
             android:exported="true"
             android:screenOrientation="portrait"
             android:parentActivityName="com.smartLab.mips.MainActivity"

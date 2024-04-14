@@ -21,27 +21,27 @@ public class RoomSimulator {
         this.roomHeight = roomHeight;
         this.observationsAtEachPoint = observationsAtEachPoint;
         this.accessPointPositions = new HashMap<>();
-        this.accessPointPositions.put("SCSLAB_AP_1_2GHZ", new Position(0, 0));
-        this.accessPointPositions.put("SCSLAB_AP_1_5GHZ", new Position(0, 0));
-        this.accessPointPositions.put("SCSLAB_AP_2_2GHZ", new Position(0, roomHeight));
-        this.accessPointPositions.put("SCSLAB_AP_2_5GHZ", new Position(0, roomHeight));
-        this.accessPointPositions.put("SCSLAB_AP_3_2GHZ", new Position(roomWidth, 0));
-        this.accessPointPositions.put("SCSLAB_AP_3_5GHZ", new Position(roomWidth, 0));
-        this.accessPointPositions.put("SCSLAB_AP_4_2GHZ", new Position(roomWidth, roomHeight));
-        this.accessPointPositions.put("SCSLAB_AP_4_5GHZ", new Position(roomWidth, roomHeight));
+        this.accessPointPositions.put("RASP_WAP_1_2GHZ", new Position(0, 0));
+        this.accessPointPositions.put("RASP_WAP_1_5GHZ", new Position(0, 0));
+        this.accessPointPositions.put("RASP_WAP_2_2GHZ", new Position(0, roomHeight));
+        this.accessPointPositions.put("RASP_WAP_2_5GHZ", new Position(0, roomHeight));
+        this.accessPointPositions.put("RASP_WAP_3_2GHZ", new Position(roomWidth, 0));
+        this.accessPointPositions.put("RASP_WAP_3_5GHZ", new Position(roomWidth, 0));
+        this.accessPointPositions.put("RASP_WAP_4_2GHZ", new Position(roomWidth, roomHeight));
+        this.accessPointPositions.put("RASP_WAP_4_5GHZ", new Position(roomWidth, roomHeight));
     }
 
     public Map<String, Map<Position, List<Double>>> simulate() {
         //Fill in access point names and empty position maps
         Map<String, Map<Position, List<Double>>> data = new HashMap<>();
-        data.put("SCSLAB_AP_1_2GHZ", new HashMap<>());
-        data.put("SCSLAB_AP_1_5GHZ", new HashMap<>());
-        data.put("SCSLAB_AP_2_2GHZ", new HashMap<>());
-        data.put("SCSLAB_AP_2_5GHZ", new HashMap<>());
-        data.put("SCSLAB_AP_3_2GHZ", new HashMap<>());
-        data.put("SCSLAB_AP_3_5GHZ", new HashMap<>());
-        data.put("SCSLAB_AP_4_2GHZ", new HashMap<>());
-        data.put("SCSLAB_AP_4_5GHZ", new HashMap<>());
+        data.put("RASP_WAP_1_2GHZ", new HashMap<>());
+        data.put("RASP_WAP_1_5GHZ", new HashMap<>());
+        data.put("RASP_WAP_2_2GHZ", new HashMap<>());
+        data.put("RASP_WAP_2_5GHZ", new HashMap<>());
+        data.put("RASP_WAP_3_2GHZ", new HashMap<>());
+        data.put("RASP_WAP_3_5GHZ", new HashMap<>());
+        data.put("RASP_WAP_4_2GHZ", new HashMap<>());
+        data.put("RASP_WAP_4_5GHZ", new HashMap<>());
 
         //Fill in all the position maps
         for (String accessPointName : data.keySet()) {

@@ -17,7 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="@string/indoor_wifi_positioning"
+            android:text="@string/indoor_mips"
             android:textSize="12pt"
             android:gravity="center"
             app:layout_constraintTop_toTopOf="parent"/>

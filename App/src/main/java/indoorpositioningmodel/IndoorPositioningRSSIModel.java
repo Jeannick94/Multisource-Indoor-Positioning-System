@@ -1,16 +1,11 @@
 package indoorpositioningmodel;
 
-import android.Manifest;
 import android.app.Activity;
 import android.content.Context;
-import android.content.pm.PackageManager;
 import android.net.wifi.ScanResult;
 import android.net.wifi.WifiManager;
 import android.util.Log;
 import android.widget.Toast;
-
-import androidx.core.app.ActivityCompat;
-import androidx.core.content.ContextCompat;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -213,7 +208,7 @@ public class IndoorPositioningRSSIModel {
         List<ScanResult> wifiList = wifiManager.getScanResults();
         Map<String, Double> rssiValues = new HashMap<>();
         for (ScanResult scanResult : wifiList) {
-            if (scanResult.SSID.contains("SCSLAB_AP")) {
+            if (scanResult.SSID.contains("RASP_WAP")) {
                 rssiValues.put(scanResult.SSID, (double) scanResult.level);
             }
         }

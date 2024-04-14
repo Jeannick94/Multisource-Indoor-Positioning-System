@@ -24,7 +24,7 @@ public class ListAdapter extends BaseAdapter {
         this.inflater = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
         for (ScanResult scanResult : wifiList) {
-            if (scanResult.SSID.contains("SCSLAB_AP")) {
+            if (scanResult.SSID.contains("RASP_WAP")) {
                 this.wifiList.add(scanResult);
             }
         }
@@ -32,7 +32,7 @@ public class ListAdapter extends BaseAdapter {
         this.wifiList.sort(Comparator.comparing(a -> a.SSID));
 
         for (ScanResult scanResult : wifiList) {
-            if (!scanResult.SSID.contains("SCSLAB_AP")) {
+            if (!scanResult.SSID.contains("RASP_WAP")) {
                 this.wifiList.add(scanResult);
             }
         }
